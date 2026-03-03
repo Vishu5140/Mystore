@@ -40,7 +40,17 @@ function Mystore() {
    }
   return (
   <div className="bg-gray-950 text-white min-h-screen px-3 sm:px-6 lg:px-12">
-    
+    {/* 🔙 Back Button */}
+<button
+  onClick={() => navigate(-1)}
+  className="fixed top-4 right-4 z-50 
+             bg-gray-900 border border-cyan-500 
+             text-cyan-400 p-3 rounded-full 
+             hover:bg-cyan-500 hover:text-black 
+             transition duration-300 shadow-lg"
+>
+  ←
+</button>
     {/* ⭐ Responsive Heading */}
     <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center py-6 text-cyan-400 tracking-wider">
       Products

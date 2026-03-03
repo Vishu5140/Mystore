@@ -91,20 +91,15 @@ function Navbar() {
 
       {/* ⭐ Mobile dropdown */}
       <div
-        ref={mobileMenuRef}
-        className="md:hidden overflow-hidden h-0 bg-gray-800 text-white px-4"
-      >
-        <ul className="flex flex-col gap-4 py-4">
-          <li>About</li>
-          <li>Contact</li>
-          <li>Logout</li>
-          <input
-            type="text"
-            placeholder="Search..."
-            className="px-3 py-1 rounded-full text-white outline-none border"
-          />
-        </ul>
-      </div>
+  ref={mobileMenuRef}
+  className="md:hidden absolute top-full left-0 w-full z-50 overflow-hidden h-0 bg-gray-800 text-white px-4"
+>
+  <ul className="flex flex-col gap-4 py-6">
+    <li onClick={() => navigate("/about")}>About</li>
+    <li onClick={() => navigate("/contact")}>Contact</li>
+    <li onClick={handlelogout}>Logout</li>
+  </ul>
+</div>
     </>
   );
 }
