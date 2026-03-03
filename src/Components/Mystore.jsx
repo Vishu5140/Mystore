@@ -42,7 +42,7 @@ function Mystore() {
   <div className="bg-gray-950 text-white min-h-screen px-3 sm:px-6 lg:px-12">
     {/* 🔙 Back Button */}
 <button
-  onClick={() => navigate(-1)}
+  onClick={() => navigate("/")}
   className="fixed top-4 right-4 z-50 
              bg-gray-900 border border-cyan-500 
              text-cyan-400 p-3 rounded-full 
